@@ -1,0 +1,11 @@
+numpy
+runipy 
+keras 
+tensorflow 
+yellowbrick 
+plotly 
+ipython 
+numpy 
+pandas 
+openpyxl 
+statsmodels==0.12.2

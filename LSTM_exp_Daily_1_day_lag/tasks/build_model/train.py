@@ -43,7 +43,8 @@ import matplotlib as plt
 
 
 #filename = "/home/admin/Models/data/LSTM_UNIVARIATE_DAILY/input/daily tickers.csv"
-filename = "Iodex_62_daily_data_OctEnd2021.csv"
+#filename = "Iodex_62_daily_data_OctEnd2021.csv"
+filename = "./InputFile.csv"
 df = pd.read_excel(filename,parse_dates=['Date'], sheet_name ='Sheet2')
 print(df.info())
 
@@ -319,10 +320,3 @@ forecast_dates = predict_dates(num_prediction)
 
 df444=close_data[-look_back:]
 df444
-
-
-# In[ ]:
-
-
-
-

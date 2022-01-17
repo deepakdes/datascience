@@ -49,7 +49,8 @@ model = tf.keras.models.load_model("lstm_uni_1daylag_model.h5")
 
 
 #filename = "/home/admin/Models/data/LSTM_UNIVARIATE_DAILY/input/daily tickers.csv"
-filename = "daily tickers _OctEnd2021.csv"
+#filename = "daily tickers _OctEnd2021.csv"
+filename = "./InputFile.csv"
 df = pd.read_excel(filename,parse_dates=['Date'], sheet_name ='Sheet2')
 print(df.info())
 
