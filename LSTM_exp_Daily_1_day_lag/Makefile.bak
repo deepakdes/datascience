@@ -7,7 +7,7 @@ TASK_IMAGES:=$(shell find tasks -name Dockerfile -printf '%h ' )
 tasks/%: FORCE
         set -e ;\
         docker build -t $(MODEL)_pipeline_$(@F):$(VERSION) $@ --network=host;\
-        docker tag $(MODEL)_pipeline_$(@F):$(VERSION) $(MODEL)_pipeline_$(@F):$(VERSION) ;\
+        docker tag model_pipeline_$(@F):$(VERSION) model_pipeline_$(@F):$(VERSION) ;\
 
 
 images: $(TASK_IMAGES)
